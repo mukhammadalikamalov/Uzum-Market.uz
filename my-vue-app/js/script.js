@@ -1,8 +1,10 @@
 let product = [
     {
         id: Math.random(),
-        name: "Smartfon Honor X6a, 4/128 GB, 6/128 GB, 5200 mA/soa",
-        price: 209,
+        name: "Oshxona anjomlari to'plami Kukmara, Granit Ultra liniyasi AP",
+        price: "47 880 so'm/oyiga",
+        realprice: "598 000 so'm",
+        sale: "399 000 so'm",
         isFavorite: false,
         isInCart: true,
         images: ["https://images.uzum.uz/cnemuk125kub33f5f2m0/t_product_540_high.jpg#1709015652203"],
@@ -10,8 +12,10 @@ let product = [
     },
     {
         id: Math.random(),
-        name: "Baxmalli to'plam RANIA: xalat va sochiqlar, yuz va hammom uchun",
-        price: 209,
+        name: "Ofis texnikalari uchun qog'oz varaqlari Sylvamo Svetotopy, A4f C07/3, 500 varaq",
+        price: "5 180 so'm/oyiga",
+        realprice: "57 000 so'm",
+        sale: "43 000 so'm",
         isFavorite: false,
         isInCart: true,
         images: ["https://images.uzum.uz/ck1descvutvccfo27mn0/t_product_540_high.jpg#1709015652203"],
@@ -19,8 +23,10 @@ let product = [
     },
     {
         id: Math.random(),
-        name: "Smartfon Honor X6a, 4/128 GB, 6/128 GB, 5200 mA/soa",
-        price: 209,
+        name: "Qahva Carte Noire, sublimatsiyalangan, 95 g",
+        price: "6 000 so'm/oyiga",
+        realprice: "85 000 so'm",
+        sale: "55 000 so'm",
         isFavorite: false,
         isInCart: true,
         images: ["https://images.uzum.uz/ccv6he35a95unf121g5g/t_product_540_high.jpg#1709015652203"],
@@ -28,8 +34,10 @@ let product = [
     },
     {
         id: Math.random(),
-        name: "Smartfon Honor X6a, 4/128 GB, 6/128 GB, 5200 mA/soa",
-        price: 209,
+        name: "Tikuv mashinasi Janome HomeDecor 2077",
+        price: "226 800 so'm/oyiga",
+        realprice: "2 850 000 so'm",
+        sale: "1 890 000 so'm",
         isFavorite: false,
         isInCart: true,
         images: ["https://images.uzum.uz/cc8egs6ha881nt1ejt40/t_product_540_high.jpg#1709015652204"],
@@ -37,8 +45,10 @@ let product = [
     },
     {
         id: Math.random(),
-        name: "Smartfon Honor X6a, 4/128 GB, 6/128 GB, 5200 mA/soa",
-        price: 209,
+        name: "Batareykalar Duracell SIMPLY AA 2X10CRD MON, 2 dona",
+        price: "1 440 so'm/oyiga",
+        realprice: "20 000 so'm",
+        sale: "12 000 so'm",
         isFavorite: false,
         isInCart: true,
         images: ["https://images.uzum.uz/ckie8okjvf2sulnv3an0/t_product_540_high.jpg#1709015652204"],
@@ -46,8 +56,10 @@ let product = [
     },
     {
         id: Math.random(),
-        name: "Smartfon Honor X6a, 4/128 GB, 6/128 GB, 5200 mA/soa",
-        price: 209,
+        name: "Oshxona anjomlari to'plami Kukmara № 8 Mramornaya, 3 dona",
+        price: "57 720 so'm/oyiga",
+        realprice: "80 000 so'm",
+        sale: "481 000 so'm",
         isFavorite: false,
         isInCart: true,
         images: ["https://images.uzum.uz/cf0prk0l08k0o9qho880/t_product_540_high.jpg#1709015652204"],
@@ -55,8 +67,10 @@ let product = [
     },
     {
         id: Math.random(),
-        name: "Smartfon Honor X6a, 4/128 GB, 6/128 GB, 5200 mA/soa",
-        price: 209,
+        name: "O'g'il bolalar uchun kombinezon-ishton, velyur",
+        price: "7 800 so'm/oyiga",
+        realprice: "98 000 so'm",
+        sale: "65 000 so'm",
         isFavorite: false,
         isInCart: true,
         images: ["https://images.uzum.uz/ce6u94gv1htd23aiovcg/t_product_540_high.jpg#1709015652204"],
@@ -64,8 +78,10 @@ let product = [
     },
     {
         id: Math.random(),
-        name: "Smartfon Honor X6a, 4/128 GB, 6/128 GB, 5200 mA/soa",
-        price: 209,
+        name: "Dezinfektsiya qiluvchi vosita Cillit Bang Dog'ga qarshi + jilo",
+        price: "3 480 so'm/oyiga",
+        realprice: "43 000 so'm",
+        sale: "29 000 so'm",
         isFavorite: false,
         isInCart: true,
         images: ["https://images.uzum.uz/cccd1reha8813vtohgtg/t_product_540_high.jpg#1709015652205"],
@@ -73,17 +89,21 @@ let product = [
     },
     {
         id: Math.random(),
-        name: "Smartfon Honor X6a, 4/128 GB, 6/128 GB, 5200 mA/soa",
-        price: 209,
+        name: "Shampun L'Oreal Paris Elseve Gialuron to'ldiruvchisi, suvsizlangan va yupqa sochlar uchun, 250 ml",
+        price: "3 224 so'm/oyiga",
+        realprice: "38 000 so'm",
+        sale: "27 000 so'm",
         isFavorite: false,
         isInCart: true,
-        images: ["https://images.uzum.uz/cc8ru0eha88139ljb7og/t_product_540_high.jpg#1709015652205"],
+        images: ["https://images.uzum.uz/cc8siruha88139ljbj50/t_product_540_high.jpg#1709186648887"],
         category: 1,
     },
     {
         id: Math.random(),
-        name: "Smartfon Honor X6a, 4/128 GB, 6/128 GB, 5200 mA/soa",
-        price: 209,
+        name: "Soch uchun bo'yog'i L'Oreal Paris Excellence Cool Creme",
+        price: "7 560 so'm/oyiga",
+        realprice: "76 000 so'm",
+        sale: "63 000 so'm",
         isFavorite: false,
         isInCart: true,
         images: ["https://images.uzum.uz/cdkv9bv0tgqvlm59f1pg/t_product_540_high.jpg#1709015652205"],
@@ -91,92 +111,112 @@ let product = [
     },
     {
         id: Math.random(),
-        name: "Smartfon Honor X6a, 4/128 GB, 6/128 GB, 5200 mA/soa",
-        price: 209,
+        name: "Tashkilotchi, quti, shkafning tanasi, narsalar va o'yinchoqlarni saqlash uchun idish",
+        price: "8 400 so'm/oyiga",
+        realprice: "130 000 so'm",
+        sale: "70 000 so'm",
         isFavorite: false,
         isInCart: true,
-        images: ["https://images.uzum.uz/cj76g97hj8j7lmgfk3c0/t_product_540_high.jpg#1709015652205"],
+        images: ["https://images.uzum.uz/ccq827n0tgqvlm57l8h0/t_product_540_high.jpg#1709186810897"],
         category: 1,
     },
     {
         id: Math.random(),
-        name: "Smartfon Honor X6a, 4/128 GB, 6/128 GB, 5200 mA/soa",
-        price: 209,
+        name: "Masofadan boshqariladigan, suv o'tkazmaydigan amfibiya mashinasi, boshqaruv pult va braslet",
+        price: "37 800 so'm/oyiga",
+        realprice: "450 000 so'm",
+        sale: "315 000 so'm",
         isFavorite: false,
         isInCart: true,
-        images: ["https://images.uzum.uz/cd9vamn0tgqvlm58vrfg/t_product_540_high.jpg#1709015652206"],
+        images: ["https://images.uzum.uz/clrcm19iac3an8rm5080/t_product_540_high.jpg#1709186914897"],
         category: 1,
     },
     {
         id: Math.random(),
-        name: "Smartfon Honor X6a, 4/128 GB, 6/128 GB, 5200 mA/soa",
-        price: 209,
+        name: "Konsiler yuz uchun, tonal tuzatuvchi, 3.5 g",
+        price: "1 200 so'm/oyiga",
+        realprice: "100 000 so'm",
+        sale: "10 000 so'm",
         isFavorite: false,
         isInCart: true,
-        images: ["https://images.uzum.uz/ccv66a35a95unf121ed0/t_product_540_high.jpg#1709015652206"],
+        images: ["https://images.uzum.uz/chod91d6sfhndlbmvp1g/t_product_540_high.jpg#1709187046867"],
         category: 1,
     },
     {
         id: Math.random(),
-        name: "Smartfon Honor X6a, 4/128 GB, 6/128 GB, 5200 mA/soa",
-        price: 209,
+        name: "Blinchik qovuradigan tova tutqich bilan Kukmara Trendy Style, malachite",
+        price: "18 720 so'm/oyiga",
+        realprice: "180 000 so'm",
+        sale: "156 000 so'm",
         isFavorite: false,
         isInCart: true,
-        images: ["https://images.uzum.uz/cc88ggeha8816arta5l0/t_product_540_high.jpg#1709015652206"],
+        images: ["https://images.uzum.uz/cbvmivcff5b95v3joc0g/original.jpg"],
         category: 1,
     },
     {
         id: Math.random(),
-        name: "Smartfon Honor X6a, 4/128 GB, 6/128 GB, 5200 mA/soa",
-        price: 209,
+        name: "Ayyoolar uchun jemper Lamita",
+        price: "16 320 so'm/oyiga",
+        realprice: "210 000 so'm",
+        sale: "136 000 so'm",
         isFavorite: false,
         isInCart: true,
-        images: ["https://images.uzum.uz/cllf7qtenntcj8a9u6jg/t_product_540_high.jpg#1709015652206"],
+        images: ["https://images.uzum.uz/clondnvn7c6gg9ie418g/t_product_540_high.jpg#1709187290139"],
         category: 1,
     },
     {
         id: Math.random(),
-        name: "Smartfon Honor X6a, 4/128 GB, 6/128 GB, 5200 mA/soa",
-        price: 209,
+        name: "Oshxona elektron tarozisi SF-400, 10 kg gacha",
+        price: "6 840 so'm/oyiga",
+        realprice: "150 000 so'm",
+        sale: "65 000 so'm",
         isFavorite: false,
         isInCart: true,
-        images: ["https://images.uzum.uz/cd467crb3ho5lmuq6he0/t_product_540_high.jpg#1709015652207"],
+        images: ["https://images.uzum.uz/cd348ej5a95unf1268cg/original.jpg"],
         category: 1,
     },
     {
         id: Math.random(),
-        name: "Smartfon Honor X6a, 4/128 GB, 6/128 GB, 5200 mA/soa",
-        price: 209,
+        name: "Radio boshqariladigan o'yinchoq, bolalar uchun mini dron, qo'l bilan boshqariladiga",
+        price: "8 280 so'm/oyiga",
+        realprice: "148 000 so'm",
+        sale: "79 000 so'm",
         isFavorite: false,
         isInCart: true,
-        images: ["https://images.uzum.uz/cl9fm15ennt861ipjbog/t_product_540_high.jpg#1709015652207"],
+        images: ["https://images.uzum.uz/ceac7qgl08kcldtokfg0/original.jpg"],
         category: 1,
     },
     {
         id: Math.random(),
-        name: "Smartfon Honor X6a, 4/128 GB, 6/128 GB, 5200 mA/soa",
-        price: 209,
+        name: "Shishali choynak, bambuk qopqoqli va filtr prujinali",
+        price: "5 040 so'm/oyiga",
+        realprice: "190 000 so'm",
+        sale: "42 000 so'm",
         isFavorite: false,
         isInCart: true,
-        images: ["https://images.uzum.uz/cc6t3uuha88ep89kl4mg/t_product_540_high.jpg#1709015652207"],
+        images: ["https://images.uzum.uz/cler0lnn7c6qm23jtp30/t_product_540_high.jpg#1709187579984"],
         category: 1,
     },
     {
         id: Math.random(),
-        name: "Smartfon Honor X6a, 4/128 GB, 6/128 GB, 5200 mA/soa",
-        price: 209,
+        name: "Quyultirilgan sut Alekseevskoe, 8.5%, 360 g",
+        price: "3 960 so'm/oyiga",
+        realprice: "34 000 so'm",
+        sale: "33 000 so'm",
         isFavorite: false,
         isInCart: true,
-        images: ["https://images.uzum.uz/cjhgsbcjvf2hn7fe00dg/t_product_540_high.jpg#1709015652207"],
+        images: ["https://images.uzum.uz/cn0bsvhs99ouqbft99g0/t_product_540_high.jpg#1709187693368"],
         category: 1,
     },
     {
         id: Math.random(),
-        name: "Smartfon Honor X6a, 4/128 GB, 6/128 GB, 5200 mA/soa",
-        price: 209,
+        name: "Islomiy erkaklar soati Al Harameen HA-6506",
+        price: "40 560 so'm/oyiga",
+        realprice: "450 000 so'm",
+        sale: "338 000 so'm",
         isFavorite: false,
         isInCart: true,
-        images: ["https://images.uzum.uz/cfnlhpnhgiov1qicauj0/t_product_540_high.jpg#1709015652207"],
+        images: ["https://images.uzum.uz/cli6fdtennt1kt4dv79g/t_product_540_high.jpg#1709187784320"],
         category: 1,
     },
 ];
@@ -188,7 +228,7 @@ product.forEach((product) => {
     card.classList.add("card", "bg-white", "rounded-lg", "overflow-hidden", "shadow-md");
 
     const images = product.images
-        .map((image) => `<img src='${image}' alt='${product.name}' class='w-full h-84 object-cover'/>`)
+        .map((image) => `<img src='${image}' alt='${product.name}' class='w-full h-84 object-cover rounded-lg'/>`)
         .join("");
 
     card.innerHTML = `
@@ -202,9 +242,21 @@ product.forEach((product) => {
     <path d="M224.6,51.9a59.5,59.5,0,0,0-43-19.9,60.5,60.5,0,0,0-44,17.6L128,59.1l-7.5-7.4C97.2,28.3,59.2,26.3,35.9,47.4a59.9,59.9,0,0,0-2.3,87l83.1,83.1a15.9,15.9,0,0,0,22.6,0l81-81C243.7,113.2,245.6,75.2,224.6,51.9Z" stroke-width="20px" stroke="#FFF" fill="none"></path></svg>
   </div>
 </label></div>
-     <h2>${product.name}</h2>
-     <p>${product.description}</p>
-     <p class="bg-yellow-300 w-24">${product.price}</p>
+     <h2 class="text-sm text-gray-700">${product.name}</h2>
+     <p>${product.description}
+     <!-- Rating -->
+<div class="flex flex-row-reverse justify-end items-center">
+  <input id="hs-ratings-readonly-1" type="radio" class="peer -ms-5 size-5 bg-transparent border-0 text-transparent cursor-pointer appearance-none checked:bg-none focus:bg-none focus:ring-0 focus:ring-offset-0" name="hs-ratings-readonly" value="1">
+  <label for="hs-ratings-readonly-1" class="text-yellow-400 pointer-events-none dark:text-gray-600">
+    <svg class="flex-shrink-0 size-5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+    </svg>
+  </label>
+</div>
+<!-- End Rating --></p>
+     <p class="mt-4 bg-yellow-300 w-32">${product.price}</p>
+     <p class="line-through">${product.realprice}</p>
+     <p>${product.sale}</p>
      <div class="border h-8 w-8 rounded-full flex center
      items-center ml-52">
   <div data-v-1a3a46a8="" class="slot default"><svg data-v-40da8b10="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="ui-icon  add-cart-icon">
