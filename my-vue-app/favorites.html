@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Uzum Market - Интернет-магазин</title>
+    <title>Uzum Market - интернет-магазин</title>
     <script>
         tailwind.config = {
             theme: {
@@ -50,6 +50,78 @@
             margin: 0;
             padding: 0;
         }
+
+        .card {
+            width: 255px;
+            border: none;
+        }
+
+        .like-container input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+        }
+
+        .like-container {
+            display: block;
+            position: relative;
+            cursor: pointer;
+            top: -307px;
+            left: 86%;
+            font-size: 11px;
+            user-select: none;
+            transition: 100ms;
+        }
+
+        .checkmark {
+            top: 0;
+            left: 0;
+            height: 2em;
+            width: 2em;
+            transition: 100ms;
+            animation: dislike_effect 400ms ease;
+        }
+
+        .like-container input:checked~.checkmark path {
+            fill: #7000FF;
+            stroke-width: 0;
+        }
+
+        .like-container input:checked~.checkmark {
+            animation: like_effect 400ms ease;
+        }
+
+        .real-price {
+            text-decoration: line-through;
+        }
+
+        .price {
+            background-color: rgb(255, 255, 0);
+            border-radius: 5px;
+        }
+
+        #modal {
+            z-index: 99;
+        }
+
+        #closeModalButton {
+            position: absolute;
+            top: -13px;
+            right: 0;
+            margin: 10px;
+            background-color: transparent;
+            color: rgb(0, 0, 0);
+            font-size: 25px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        @import 'tailwindcss/base';
+        @import 'tailwindcss/components';
+        @import 'tailwindcss/utilities';
     </style>
 
 <body>
@@ -76,10 +148,7 @@
     </nav>
     <header class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
         <div class="w-full h-16 bg-white max-w-screen-xl flex flex-wrap items-center mx-auto">
-            <img data-v-48f9edf8=""
-                src="data:image/svg+xml,%3csvg width='36' height='36' viewBox='0 0 36 36' fill='none' xmlns='http://www.w3.org/2000/svg'%3e %3cg clip-path='url(%23clip0_2057_199813)'%3e %3cmask id='mask0_2057_199813' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='36' height='36'%3e %3cpath d='M18 0C33 0 36 3 36 18C36 33 33 36 18 36C3 36 0 33 0 18C0 3 3 0 18 0Z' fill='white'/%3e %3c/mask%3e %3cg mask='url(%23mask0_2057_199813)'%3e %3crect width='36' height='36' fill='%23FFFF00'/%3e %3cpath d='M1.7424 8.42296C1.3915 9.57087 1.63459 10.9497 2.12075 13.7073L3.09512 19.2342C3.4556 21.2789 3.68243 22.5655 4.07004 23.4849L0 24.2027V36H4.5L29.8228 31.532C33.1937 30.9375 35.4445 27.7225 34.8501 24.351C34.5822 22.831 33.7816 21.5386 32.6742 20.6322C32.9649 20.2115 33.1912 19.7461 33.3425 19.251C33.6934 18.1031 33.4503 16.7242 32.9642 13.9666L31.9898 8.43977C31.5036 5.68212 31.2605 4.30329 30.5383 3.34464C29.9029 2.50138 29.017 1.88094 28.0074 1.57223C26.8597 1.22128 25.4811 1.46441 22.7239 1.95065L8.6088 4.43993C5.8516 4.92618 4.47301 5.16931 3.51451 5.8917C2.67139 6.52714 2.05105 7.41323 1.7424 8.42296Z' fill='%237000FF'/%3e %3cpath d='M17.9998 6.96094C17.5841 6.96094 17.1755 6.97855 16.7703 7.01378L16.7633 12.7266H19.2293V7.01378C18.8241 6.96094 18.4155 6.96094 17.9998 6.96094Z' fill='white'/%3e %3cpath d='M22.8722 19.3328C24.1644 18.0406 24.8904 16.2879 24.8904 14.4604V10.3352C23.9968 10.0367 23.0833 9.80122 22.1567 9.63061V14.4357C22.1567 17.8916 20.6912 19.6988 17.9998 19.6988C15.3084 19.6988 13.8464 17.8916 13.8464 14.4357V9.63061C12.9187 9.80166 12.0041 10.0371 11.1092 10.3352V14.4604C11.1092 16.2879 11.8351 18.0406 13.1274 19.3328C14.4196 20.625 16.1723 21.375 17.9998 21.375C19.8273 21.375 21.58 20.625 22.8722 19.3328Z' fill='white'/%3e %3cpath d='M20.4184 28.8032H21.5025V26.9742L23.1982 28.8032H24.477L22.7257 26.8911L24.338 25.0621H23.0592L21.5025 26.808V23.8983H20.4184V28.8032Z' fill='white'/%3e %3cpath d='M7.32527 25.6719C7.60325 25.2562 8.10362 24.9791 8.79858 24.9791C9.96612 24.9791 10.5221 25.7273 10.5221 26.6418V28.831H9.43795V26.8081C9.43795 26.3647 9.18776 25.9767 8.65959 25.9767C8.13142 25.9767 7.88124 26.337 7.88124 26.7804V28.831H6.7971V26.7804C6.7971 26.337 6.51911 25.9767 5.99094 25.9767C5.46277 25.9767 5.24039 26.3647 5.24039 26.8081V28.831H4.15625V26.6418C4.15625 25.7273 4.74002 24.9791 5.90755 24.9791C6.49132 24.9791 7.07508 25.2562 7.32527 25.6719Z' fill='white'/%3e %3cpath fill-rule='evenodd' clip-rule='evenodd' d='M15.4981 27.5009V25.0622H14.4139V25.6442C14.1915 25.2839 13.7746 24.9791 13.0518 24.9791C11.8009 24.9791 11.1615 25.949 11.1615 26.9189C11.1337 27.9165 11.8565 28.8864 12.9962 28.8864C13.6078 28.8864 14.1637 28.6093 14.4139 28.1382C14.5251 28.4431 14.8031 28.7756 15.3591 28.7756H15.9706V27.8611H15.8038C15.5814 27.9165 15.4981 27.8334 15.4981 27.5009ZM13.2742 27.972C12.6626 27.972 12.19 27.5563 12.19 26.9466C12.19 26.3647 12.6626 25.949 13.2742 25.949C13.9135 25.949 14.3583 26.3647 14.3583 26.9466C14.3861 27.5286 13.9135 27.972 13.2742 27.972Z' fill='white'/%3e %3cpath d='M16.8881 28.8033H17.9722V27.1406C17.9722 26.5032 18.4448 26.0876 19.0286 26.0876H19.7513V24.9791H19.2232C18.556 24.9791 18.0834 25.5333 17.9722 25.8659V25.0622H16.8881V28.8033Z' fill='white'/%3e %3cpath fill-rule='evenodd' clip-rule='evenodd' d='M25.6721 27.2237C25.6721 27.6394 25.8945 28.0551 26.5895 28.0551C27.2288 28.0551 27.3122 27.6671 27.3122 27.6671H28.5076C28.5076 27.6671 28.3964 28.8864 26.5895 28.8864C25.3386 28.8864 24.5324 28.1936 24.5324 26.9189C24.5324 25.6719 25.3108 24.9791 26.5617 24.9791C27.7848 24.9791 28.591 25.6719 28.591 26.9189C28.591 27.0575 28.5632 27.196 28.5632 27.196H25.6721V27.2237ZM25.6999 26.5587H27.4512C27.4512 26.2538 27.2844 25.8105 26.5895 25.8105C25.8945 25.8382 25.6999 26.2538 25.6999 26.5587Z' fill='white'/%3e %3cpath d='M31.1762 27.8611C30.8148 27.8611 30.6758 27.6948 30.6758 27.1683V25.8659H31.8434V24.9791H30.6758V24.2309H30.0921L29.0357 25.2285V25.8382H29.5917V27.3069C29.5917 28.3599 30.1199 28.8033 31.1762 28.8033H31.8434V27.8611H31.1762Z' fill='white'/%3e %3c/g%3e %3c/g%3e %3cdefs%3e %3cclipPath id='clip0_2057_199813'%3e %3crect width='36' height='36' fill='white'/%3e %3c/clipPath%3e %3c/defs%3e %3c/svg%3e"
-                class="noselect icon" style="width: 36px; height: 36px;">
-            <h1 id="header-h1" class="text-[#7000FF] ml-4">uzum market</h1>
+            <img src="logos/Picsart_24-02-29_11-26-12-300.png" alt="">
             <button class="w-32 h-10 bg-violet-100 ml-6 rounded text-violet-600">
                 <span class="icon-[ant-design--shopping-outlined]"></span> Katalog
             </button>
@@ -103,11 +172,30 @@
                 </div>
             </div>
             <div id="buttons" class="ml-3 max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
-                <button class=" ml-5  rounded text-gray-800 flex"><svg class="text-gray-800"
-                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <!-- Button to Open Modal -->
+                <button class="ml-5 rounded text-gray-800 flex" id="openModalButton">
+                    <svg class="text-gray-800" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24">
                         <path fill="black"
                             d="M12 6c1.1 0 2 .9 2 2s-.9 2-2 2s-2-.9-2-2s.9-2 2-2m0 10c2.7 0 5.8 1.29 6 2H6c.23-.72 3.31-2 6-2m0-12C9.79 4 8 5.79 8 8s1.79 4 4 4s4-1.79 4-4s-1.79-4-4-4m0 10c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4" />
-                    </svg>Kirish</button>
+                    </svg>Kirish
+                </button>
+
+                <!-- Modal box -->
+                <div class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden" id="modal">
+                    <div class="bg-white p-8 rounded-md shadow-md relative">
+                        <button class="absolute top-0 right-0 m-2 bg-black text-white px-4 py-2 rounded-md"
+                            id="closeModalButton">
+                            &times; </button>
+                        <h2 class="text-xl font-semibold mb-4">Telefon raqamni kiriting</h2>
+                        <p class="text-x2 font-semibold mb-4">Tasdiqlash kodini SMS orqali yuboramiz</p>
+                        <input type="text" id="phoneNumberInput" placeholder="+998 00 000 00 00"
+                            class="border border-gray-300 p-2 rounded-md mb-4" style="width: 100%;">
+                        <button class="bg-blue-500 text-white px-4 py-2 rounded-md w-full" id="getCodeButton">Kodni
+                            olish</button>
+                    </div>
+                </div>
+
                 <button class=" ml-5  rounded text-gray-800 flex"><svg class="ml-3 text-gray-800"
                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48">
                         <path fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
@@ -121,26 +209,32 @@
             </div>
         </div>
         <div class="mt-3">
-            <ul id="links" class="flex">
+            <ul id="links" class="flex gap-4">
                 <img class="w-5 h-5" src="https://static.uzum.uz/nasiya/union.png" alt="">
                 <a class="ml-1" href="">Muddatli to`lov</a>
                 <img class="w-5 h-5 ml-6" src="https://static.uzum.uz/fast_categories/new_sale_2023.png" alt="">
                 <a class="ml-1" href="">Sirli to`plam</a>
-                <img class="w-5 h-5 ml-6" src="https://static.uzum.uz/fast_categories/winter_clothes.png" alt="">
-                <a class="ml-1" href="">Qishgi sotuv</a>
                 <img class="w-5 h-5 ml-6" src="https://static.uzum.uz/fast_categories/mens_gifts.png" alt="">
                 <a class="" href="">Erkaklar uchun</a>
-                <a class="ml-3 text-slate-400" href=""> Kiyimlar</a>
-                <a class="ml-3 text-slate-400" href="">Poyabzal</a>
+                <a class="ml-3 text-slate-400" href="">Elektronika</a>
+                <a class="ml-3 text-slate-400" href="">Maishiy texnika</a>
+                <a class="ml-3 text-slate-400" href="">Kiyim</a>
+                <a class="ml-3 text-slate-400" href="">Poyabzallar</a>
                 <a class="ml-3 text-slate-400" href="">Aksessuarlar</a>
                 <a class="ml-3 text-slate-400" href="">Go`zalik va parvarish</a>
                 <a class="ml-3 text-slate-400" href="">Salomatlik</a>
-                <a class="ml-3 text-slate-400" href="">Uy-ro`zg`or buyumlari</a>
                 <a class="ml-3 text-slate-400" href="">Yana ></a>
             </ul>
         </div>
     </header>
+    <div class="container max-w-screen- mx-auto py-12">
+        <h1 class="text-3xl font-semibold mb-4">Istaklarim </h1>
+        <hr style="width:99%; text-align:left; margin-left:0; margin-top: -17px;">
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
+        </div>
+    </div>
 
+    <script src="js/script2.js"></script>
 </body>
 
 </html>
