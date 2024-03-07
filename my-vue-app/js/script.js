@@ -289,3 +289,54 @@ document.getElementById("openModalButton").addEventListener("click", () => {
 document.getElementById("closeModalButton").addEventListener("click", () => {
     document.getElementById("modal").classList.add("hidden");
 });
+
+const searchInput = document.getElementById("searchInput")
+const searchResults = document.getElementById("searchResults")
+
+function displayProducts(products) {
+    searchInput.innerHTML = ""
+
+    if(product.length === 0) {
+        const noResultMessage = document.createElement("p")
+        noResultMessage.textContent = "No Product";
+        noResultMessage.classList.add("text-lg")
+        searchResults.appendChild(noResultMessage)
+        return
+    }
+
+    products.forEach((product) => {
+        const card = document.createElement("div");
+        card.classList.add("bg-white", "p-4", "rounded-md");
+
+        const name = document.createElement("h2");
+        name.textContent = product.name;
+        name.classList.add("text-lg");
+        card.appendChild(name);
+
+        const price = document.createElement("p");
+        price.textContent = `Price ${product.price}`;
+        card.appendChild(price);
+
+        const description = document.createElement("p");
+        description.textContent = description.name;
+        description.classList.add("text-lg");
+        card.appendChild(description);
+
+        searchResults.appendChild(card);
+    });
+}
+
+function searchProducts(query) {
+    if (query.length < 3) {
+        searchResults.innerHTML = "";
+        return;
+    }
+
+    const results = product.filter((product) => product.name.toLocaleLowerCase().includes(query.toLocaleLowerCase()));
+    displayProducts(results);
+};
+
+searchInput.addEventListener("input", () => {
+    searchProducts(searchInput.value.trim());
+});
+
